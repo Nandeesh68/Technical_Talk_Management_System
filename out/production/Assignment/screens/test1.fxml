@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1249.0" style="-fx-background-color: #EFE1CE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screens.ScheduleMeetingController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.39996337890625" minWidth="10.0" prefWidth="180.19996643066406" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1068.800033569336" minWidth="10.0" prefWidth="1068.800033569336" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="189.59998168945313" minHeight="10.0" prefHeight="88.59999084472656" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="455.2000091552734" minHeight="10.0" prefHeight="455.2000091552734" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="306.8000091552734" minHeight="7.999987792968739" prefHeight="14.399987792968773" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox maxWidth="-Infinity" prefHeight="400.0" prefWidth="180.0" style="-fx-background-color: #0072B5;" GridPane.rowSpan="3" />
+      <Label alignment="CENTER" prefHeight="46.0" prefWidth="166.0" text="Welcome," textFill="#f1f1f2" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" text="TECHNICAL TALKS MANAGEMENT SYSTEM" textFill="#d2386c" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="SansSerif Bold" size="40.0" />
+         </font>
+      </Label>
+      <GridPane prefHeight="270.0" prefWidth="171.0" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="85.60001220703126" minHeight="10.0" prefHeight="49.59998779296875" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="126.40000381469727" minHeight="7.800006103515628" prefHeight="47.60000610351562" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="188.2000061035156" minHeight="10.0" prefHeight="47.59999389648439" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="188.2000061035156" minHeight="10.0" prefHeight="54.79999999999998" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="287.2" minHeight="10.0" prefHeight="287.2" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="optionStyle" fx:id="btnDisplay" alignment="CENTER" maxWidth="-Infinity" mnemonicParsing="false" onAction="#displayTable" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: #0072B5;" stylesheets="@talksStyle.css" text="All Meetings" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="optionStyle" fx:id="displayForm" alignment="CENTER" maxWidth="-Infinity" mnemonicParsing="false" onAction="#schedular" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #0072B5;" stylesheets="@talksStyle.css" text="Schedule meeting" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="optionStyle" alignment="CENTER" maxWidth="-Infinity" mnemonicParsing="false" onAction="#dispalyDeleteTab" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: #0072B5;" stylesheets="@talksStyle.css" text="Delete meeting" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="optionStyle" alignment="CENTER" layoutX="10.0" layoutY="59.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#updateMeeting" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: #0072B5;" stylesheets="@talksStyle.css" text="Update meeting" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

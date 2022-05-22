@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="updateGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screens.DeleteController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="97.59999084472656" minHeight="10.0" prefHeight="97.59999084472656" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="97.59999084472656" minHeight="10.0" prefHeight="97.59999084472656" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="478.3999877929688" minHeight="10.0" prefHeight="465.00000915527346" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="127.80002441406253" minHeight="10.0" prefHeight="11.20001220703125" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="searchBox" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="38.0" prefWidth="250.0" style="-fx-font-size: 15;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="35.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <ComboBox fx:id="searchDrop" maxHeight="-Infinity" prefHeight="38.0" prefWidth="225.0" promptText="--Select--" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label text="Delete Meeting" GridPane.valignment="BOTTOM">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" onSort="#initialize" prefHeight="440.0" prefWidth="1218.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <columns>
+            <TableColumn fx:id="serialNo" prefWidth="92.79998475313187" sortType="DESCENDING" style="-fx-font-size: 15;" text="Serial No." />
+            <TableColumn fx:id="academicYear" prefWidth="138.39996337890625" sortType="DESCENDING" style="-fx-font-size: 15;" text="Academic Year" />
+            <TableColumn fx:id="dateTime" prefWidth="168.0000762939453" sortType="DESCENDING" style="-fx-font-size: 15;" text="Date and Time" />
+            <TableColumn fx:id="duration" prefWidth="98.4000244140625" sortType="DESCENDING" style="-fx-font-size: 15;" text="Duration" />
+            <TableColumn fx:id="personName" prefWidth="202.40005493164062" sortType="DESCENDING" style="-fx-font-size: 15;" text="Resoures Person Name" />
+            <TableColumn fx:id="topicTitle" prefWidth="184.79998779296875" sortType="DESCENDING" style="-fx-font-size: 15;" text="Topic Title" />
+            <TableColumn fx:id="keypoints" minWidth="0.0" prefWidth="197.5999755859375" sortType="DESCENDING" style="-fx-font-size: 15;" text="Keypoints" />
+            <TableColumn fx:id="delete" prefWidth="108.0" sortType="DESCENDING" style="-fx-font-size: 15;" text="Delete" />
+         </columns>
+      </TableView>
+   </children>
+</GridPane>
